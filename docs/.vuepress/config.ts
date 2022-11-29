@@ -23,20 +23,20 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   themeConfig: {
     // 导航配置
     nav: [
+      // 说明：以下所有link的值只是在相应md文件头部定义的永久链接。另外，注意结尾是有斜杠的
       { text: '首页', link: '/' },
       {
-        text: 'web',
-        link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+        text: '落花',
+        // link: '', 
         items: [
-          // 说明：以下所有link的值只是在相应md文件头部定义的永久链接。另外，注意结尾是有斜杠的
           {
-            text: '前端文章',
+            text: '铜雀台',
             items: [
               { text: 'JavaScript', link: '/pages/8143cc480faf9a11/' },
             ],
           },
           {
-            text: '后端文章',
+            text: '超然亭',
             items: [
               { text: 'Python', link: '/note/javascript/' },
               { text: 'Java', link: '/note/js/' },
@@ -46,24 +46,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '页面',
-        link: '/ui/',
-        items: [
-          { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
-          { text: 'CSS', link: '/pages/0a83b083bdf257cb/' },
-        ],
+        text: '微雨',
+        // link: '/',
+        // items: [
+          // { text: '', link: '/pages/***/' },
+        // ],
       },
       {
         text: '工具',
-        link: '/technology/',
+        // link: '/',
         items: [
           { text: 'baidu', link: 'http://www.baidu.com' },
-          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+          { text: 'GitHub技巧', link: 'http://www.github.com' },
         ],
-      },
-      {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
       },
       {
         text: '索引',
@@ -80,6 +75,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           { text: '关于', link: '/about/' },
           { text: '友链', link: '/friendlinks/' },
+		  { text: '大佬博客', link: '/laoblog/'}
         ],
       },
     ],
@@ -130,9 +126,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 侧边栏  'structuring' | { mode: 'structuring', collapsable: Boolean} | 'auto' | <自定义>    温馨提示：目录页数据依赖于结构化的侧边栏数据，如果你不设置为'structuring',将无法使用目录页
     sidebar: 'structuring',
 
-    // 文章默认的作者信息，(可在md文件中单独配置此信息) 
+    // 文章默认的作者信息
     author: {
-      name: 'shulinchen',
+      name: 'Vin0sen',
       link: 'https://github.com/Vin0sen', 
     },
 
@@ -169,7 +165,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据
     // extendFrontmatter: {
       // author: {
-        // name: 'shulinchen',
+        // name: 'Vin0sen',
         // link: 'https://github.com/Vin0sen'
       // }
     // },
